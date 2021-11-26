@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/todo.css"/>
+    <title>To-do list</title>
+</head>
+<body>
+<div class="container ">
+    <div class="card ">
+        <h1>To-do list </h1>
+        <div class="cc">
+            <form id="form2">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend ">
+                    </div>
+                    <input type="text" id="searchId" class="form-control" pattern=".{3,}" title="Minimum 3 characters"
+                           placeholder="Search by id">
+                    <input type="text" id="searchName" class="form-control" pattern=".{3,}" title="Minimum 3 characters"
+                           placeholder="Search by title">
+                    <input type="text" id="searchDate" class="form-control" pattern=".{3,}" title="Minimum 3 characters"
+                           placeholder="Search by date">
+                    <div class="input-group-prepend ">
+                    </div>
+                    <div class="input-group-prepend ">
+                        <button type="button" id="srcBtn" form="form2" value="Submit" class="sb btn btn-primary"><i
+                                class="fa fa-search"></i> Search
+                            <button form="form2" id="srcClearBtn" value="Clear" type="reset" class="btn btn-primary">ESC
+                            </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="aa">
+            <div id="inputDateAlertSearch" class="inuptDateAlert" style="display: none "></div>
+        </div>
+        <ul></ul>
+        <div class="bb">
+            <form id="form1">
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend ">
+                    </div>
+                    <input id="inputId" type="text" class="form-control " pattern=".{3,255}"
+                           title="From 3 to 255 characters" placeholder="Kod">
+                    <input id="inputName" type="text" class="form-control " pattern=".{3,255}"
+                           title="From 3 to 255 characters" placeholder="Tytul">
+                    <div class="input-group-prepend ">
+
+                    </div>
+                    <input id="inputDate" type="date" class="form-control">
+
+                    <div class="input-group-append">
+                        <button id="myBtn" class="btn btn-primary" form="form1" value="Submit" type="button">Add Task
+                        </button>
+                        <button id="Cancel" class="btn btn-primary" form="form1" value="Clear" type="reset">ESC
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="aa">
+            <div id="inputTaskAlert" class="inuptTaskAlert col-5" style="display: none"></div>
+            <div id="inputDateAlert" class="inuptDateAlert" style="display: none "></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/todo.js"></script>
+
+</body>
+</html>
